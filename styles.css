@@ -1,0 +1,196 @@
+:root {
+    /* Main Root Colors */
+    --background-color: whitesmoke;
+    --student-select: rgba(38, 116, 226, 0.5);
+    --student-select-hover: #1B62C5;
+    --staff-select-hover: #B81414;
+    --staff-select: rgba(184, 19, 19, 0.5);
+    --text-color: black;
+    --text-hover: white;
+
+    /* Return Button */
+    --return: #D3D5D1;
+    --return-hover: #666A86;
+
+    /* Login Box */
+    --login-main: rgba(174, 176, 194, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Flex", "Trebuchet MS";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Select Page*/
+.select-nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.head {
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.select-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.face {
+    font-size: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .3s ease-in-out;
+}
+
+.select-main a:hover {
+    color: var(--text-hover);
+}
+
+.student-select { /* DO NOT TOUCH!!! */
+    display: flex;
+    width: 100%;
+    padding: 0 210px 0 210px;
+    height: 450px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--student-select);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.student-select:hover {
+    transform: translateY(-5px);
+    background-color: var(--student-select-hover);
+    cursor: pointer;
+}
+
+.split { /* DO NOT TOUCH!!! */
+    display: flex;
+    width: 2%;
+    height: auto;
+}
+
+.staff-select { /* DO NOT TOUCH!!! */
+    display: flex;
+    width: 100%;
+    padding: 0 243px 0 243px;
+    height: 450px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--staff-select);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.staff-select:hover {
+    transform: translateY(-5px);
+    background-color: var(--staff-select-hover);
+    cursor: pointer;
+}
+
+/* Return Button [Short-term] */
+.return {
+    display: flex;
+    width: 5%;
+    padding: 10px;
+    border-radius: 13px;
+    margin: 40px 0 0 30px;
+    height: auto;
+    background-color: var(--return);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.return:hover {
+    background-color: var(--return-hover);
+    color: var(--text-hover);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* Student Log In */
+.student-login-main {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    background-color: var(--login-main);
+    align-items: center;
+    justify-content: center;
+    margin: 119px 199px 199px 437px;
+    border-radius: 30px;
+    padding: 0 100px 67px 100px;
+}
+
+.student-login-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 40px 120px 95px 120px;
+}
+
+.student-email-text {
+    margin-right: 37px;
+}
+
+.student-login-input-box {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    margin: -50px 0 0 0;
+    padding: 0;
+}
+
+.student-login-input-box input {
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.login-button, .student-bypass {
+    border-radius: 13px;
+    border: none;
+    padding: 5px;
+    margin-top: 14px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.student-bypass {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-button:hover, .student-bypass:hover {
+    background-color: var(--return-hover);
+    color: var(--text-hover);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
