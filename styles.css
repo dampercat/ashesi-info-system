@@ -12,6 +12,10 @@
     --return: #D3D5D1;
     --return-hover: #666A86;
 
+    /* Admin Bypass Hover */
+    --admin-hover: #001826;
+    --admin-hover-color: #EB0038;
+
     /* Login Box */
     --login-main: rgba(174, 176, 194, 0.5);
 }
@@ -176,7 +180,7 @@ a {
     border: none;
     padding: 5px;
     margin-top: 14px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.5s ease, background-color 0.3s ease, color 0.01s ease-in-out, box-shadow 0.1s ease;
     font-size: 20px;
 }
 
@@ -187,7 +191,15 @@ a {
     justify-content: center;
 }
 
-.login-button:hover, .student-bypass:hover {
+.student-bypass:hover {
+    background-color: var(--admin-hover);
+    color: var(--admin-hover-color);
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 0 0 20px 3px var(--admin-hover-color);
+}
+
+.login-button:hover {
     background-color: var(--return-hover);
     color: var(--text-hover);
     transform: translateY(-3px);
